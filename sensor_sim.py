@@ -1,5 +1,10 @@
-# Nernst equation didn't work yet.
-# Therefore sensitivy curve was simulated (work-in-progress on Nernst in book+laptop).
+# Nernst: Ec + (R*T)/(zF)*ln(P(CO2))
+# Ec -> Standard electrode potential (Na+ + e- <-> Na(s)) = -2.71
+# R -> universal gas constant = 							 8.31447215 (J K-1 mol-1)
+# T -> Temp (in K), K =   									 C+273.15
+# F -> Faraday constant =									 9.6485339924*10^4 Cmol-1
+# z -> electrons transfered = 								 2
+# P(CO2) -> partial pressure (gas) = ppm/1000000
 
 import sys, getopt, math, time,random
 
@@ -10,7 +15,6 @@ MIN_EMF = 0.3049
 MAX_EMF = 0.3236
 MIN_V = 0;
 MAX_V = 3.3;
-
 
 def nernst(T, ppm): #ppm CO2 (actually the Partial Pressure, but formula is changed to work with ppm)
 	# Theoretically correct
