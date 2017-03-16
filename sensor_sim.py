@@ -6,7 +6,6 @@ import sys, getopt, math, time,random
 MAX_SAMPLE_INVTERVAL = 500
 MIN_MEASURE = 350
 MAX_MEASURE = 450
-
 MIN_EMF = 0.3049
 MAX_EMF = 0.3236
 MIN_V = 0;
